@@ -89,7 +89,7 @@ module.exports = ({ mode, server } = { mode: MODE.DEV, server: "local" }) => ({
       xhtml: true,
       inject: true,
     }),
-    new CopyPlugin([{ from: "./public", to: "./", test: /\.png$/ }]),
+    new CopyPlugin({ patterns: [{ from: "*.png", context: "public" }] }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
       chunkFilename: "css/[id].css",
