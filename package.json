@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for React projects with minimal dependencies.",
-  "main": "index.ts",
+  "main": "index.tsx",
   "repository": "https://github.com/skb1129/react-boilerplate",
   "author": "Surya Kant Bansal <suryakantbansal97@gmail.com>",
   "license": "MIT",
