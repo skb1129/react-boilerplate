@@ -11,7 +11,7 @@ function App() {
     link: "app__link",
   };
   return (
-    <div className={styles.wrapper}>
+    <div data-testid="app" className={styles.wrapper}>
       <header className={styles.header}>
         <img src="/react.png" className={styles.logo} alt="React logo." />
         <p className={styles.text}>
