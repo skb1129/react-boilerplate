@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./App.scss";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div data-testid="app" className={classes.wrapper}>
       <header className={classes.header}>
