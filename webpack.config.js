@@ -17,7 +17,8 @@ module.exports = (env, options) => {
   return {
     mode,
     devServer: {
-      contentBase: path.join(__dirname, "./build/"),
+      static: { directory: path.join(__dirname, "./build/") },
+      client: { overlay: true },
       host: "0.0.0.0",
       port: "3000",
       proxy: {
@@ -31,7 +32,6 @@ module.exports = (env, options) => {
         },
       },
       hot: true,
-      overlay: true,
       https: server !== "local",
       headers: {
         "Access-Control-Allow-Origin": "*",
